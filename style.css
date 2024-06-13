@@ -4,11 +4,16 @@
 }
 .heading{
     margin-left: 10px;
-    position: sticky;
-    top: 0%;
 }
 .heading img{
     width: 100%;
+}
+.heading-title {
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 65px;
+    color: #ff29a7;
+    text-shadow: 9px -9px 3px pink;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -83,4 +88,27 @@
     color: white;
     padding-inline: 16px;
     border-radius: 18px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgb(0 0 0 / 80%);
+    color: grey;
+    font-size: 14px;
+    font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: rgb(67, 70, 255);
 }
