@@ -90,6 +90,10 @@
     border-radius: 18px;
 }
 
+.go-up-button button{
+    position: absolute;
+    right: 6px;
+}
 .footer {
     margin-top: 20px;
     padding: 30px;
