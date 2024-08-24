@@ -2,973 +2,420 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap module assignment
-  </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap module assignment</title>
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <!-- Nav bar -->
+    <div id="top" class="heading">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" href="/">
+                    <div class="heading-title">
+                        <!-- <img src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg" alt=""> -->
+                        MY-SHOPE
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">App Download </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a supplier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Room</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                </svg>
+                                Profile</a>
+                        </li>
 
-  <!--  <div class="heading">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="head-bar bg-light d-flex flex-row flex-nowrap justify-content-around align-items-center">
         <div>
-          <img src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg" alt="">
-        </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">App Download <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Become a supplier</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">New Room</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-              </svg>
-              Profile
+            <a href="./women-ethic.html">
+                <div>
+                    <button class="btn" type="button">
+                        Women Ethnic
+                    </button>
+                </div>
             </a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        
-      </div>
-    </nav>
-  </div> -->
+        </div>
+        <div>
+            <a href="./men.html">
+                <div>
+                    <button class="btn" type="button">
+                        Men
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="./kid.html">
+                <div>
+                    <button class="btn" type="button">
+                        kids
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="./kitchen.html">
+                <div>
+                    <button class="btn" type="button">
+                        Home & kitchen
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="./beauty.html">
+                <div>
+                    <button class="btn" type="button">
+                        Beauty & Health
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="./jewellery.html">
+                <div>
+                    <button class="btn" type="button">
+                        Jewellery 7 Accessories
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="./bags.html">
+                <div>
+                    <button class="btn" type="button">
+                        Bags & Footwares
+                    </button>
+                </div>
+            </a>
+        </div>
+    </div>
 
-  <div id="top" class="heading">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <div class="heading-title">
-            <!-- <img src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg" alt=""> -->
-            MY-SHOPE
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">App Download </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Become a supplier</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">New Room</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+    <!-- Nav bar -->
+
+    <!-- Link to new web page -->  
+         
+    <div class="ads">
+        <div class="ads-text">
+            Lowest Prices <br>
+            Best Quality Shopping
+        </div>
+        <div>
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="ads-seperation">
+        <span>Top Categories to choose from</span>
+    </div>
+
+    <div class="ads-2">
+        <img src="https://i.pinimg.com/736x/9f/4a/9d/9f4a9d18d6344e53e0b9e260ed2705ae.jpg" alt="">
+    </div>
+
+    <div class="sub-heading">
+        Product For You
+    </div>
+
+    <div class="product d-flex justify-content-around flex-wrap">
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
+                </div>
+                <div class="product-text">Panda Bag </div>
+                <div>
+                    <span class="prize">₹134 </span><sub>onwards</sub>
+                </div>
+                <div class="delivery"><span>Free Delivery</span></div>
+                <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Go up button -->
+
+    <div class="go-up-button">
+        <a href="#top">
+            <button type="button" class="btn btn-secondary">
+                Go up
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
                 </svg>
-                Profile</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <div class="head-bar bg-light d-flex flex-row flex-nowrap justify-content-around align-items-center">
-    <div>
-      <a href="#Women-Ethnic">
-        <div>
-          <button class="btn" type="button">
-            Women Ethnic
-          </button>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#men">
-        <div>
-          <button class="btn" type="button">
-            Men
-          </button>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#kids">
-        <div>
-          <button class="btn" type="button">
-            kids
-          </button>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#kitchen">
-        <div>
-          <button class="btn" type="button">
-            Home & kitchen
-          </button>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#Beauty">
-        <div>
-          <button class="btn" type="button">
-            Beauty & Health
-          </button>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#Jewellery">
-        <div>
-          <button class="btn" type="button">
-            Jewellery 7 Accessories
-          </button>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#Bags">
-        <div>
-          <button class="btn" type="button">
-            Bags & Footwares
-          </button>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="sub-heading">
-    Product For You
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
-        </div>
-        <div class="product-text">Panda Bag </div>
-        <div>
-          <span class="prize">₹134 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
-        </div>
-        <div class="product-text">Panda Bag </div>
-        <div>
-          <span class="prize">₹134 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
-        </div>
-        <div class="product-text">Panda Bag </div>
-        <div>
-          <span class="prize">₹134 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
-        </div>
-        <div class="product-text">Panda Bag </div>
-        <div>
-          <span class="prize">₹134 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
-        </div>
-        <div class="product-text">Panda Bag </div>
-        <div>
-          <span class="prize">₹134 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.7</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Women Ethnic -->
-
-  <div class="sub-heading" id="Women-Ethnic">
-    Women Ethnic Wears
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/415571873/dfoql_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/170011263/r5xav_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/327932961/rnlbb_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/299885320/cgjas_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/76885361/fdosd_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mens Wears -->
-
-  <div class="sub-heading" id="men">
-    Men Top Wear
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/406620336/tazb1_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/390474112/kjd3j_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/324446592/b9nml_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/162301298/z07gk_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/292427153/wnxsc_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- kids -->
-
-  <div class="sub-heading" id="kids">
-    Kids Dresses
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/414219063/gw89d_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/383579395/tx2tf_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/417664695/qttuf_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/63669969/01wx4_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/383579395/tx2tf_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Home & Kitchen -->
-
-  <div class="sub-heading" id="kitchen">
-    Kitchen Storage
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/227531506/mgn3r_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/398566547/ogmvi_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/369364631/obeia_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/122227844/iu5c2_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/417356976/nsi3h_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Beauty & Health -->
-
-  <div class="sub-heading" id="Beauty">
-    Face Makeup
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/385654401/ptgnx_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/269624921/wl4rv_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/370801703/xwuxe_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/387785444/xkxc3_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/142103740/wnm1a_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Jewellery 7 Accessories -->
-
-  <div class="sub-heading" id="Jewellery">
-    Jewellery 7 Accessories
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/326255472/rqmoh_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/85630166/cisnh_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/314436847/4gni6_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/212351616/pfo1y_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/51982067/juuuw_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bags & Footwares -->
-
-  <div class="sub-heading" id="Bags">
-    Ladies Bag
-
-    <!-- Go up button -->
-    <span class="go-up-button">
-      <a href="#top">
-        <button type="button" class="btn btn-secondary">
-          Go up
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-          </svg>
-        </button>
-      </a>
-    </span>
-  </div>
-
-  <div class="product d-flex justify-content-around flex-wrap">
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/50924908/1zs5z_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/57409918/iucvm_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/331972071/ipl9o_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/378123328/dpyv3_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-    <div class="child">
-      <div>
-        <div>
-          <img src="https://images.meesho.com/images/products/370623883/kfjp9_400.webp" alt="">
-        </div>
-        <div class="product-text">Trendy Women Blouses </div>
-        <div>
-          <span class="prize">₹334 </span><sub>onwards</sub>
-        </div>
-        <div class="delivery"><span>Free Delivery</span></div>
-        <span class="rate"><span>3.78</span><sub>45352 Reviews</sub></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-
-  <div class="footer">
-
-    <div>
-      <table>
-        <thead>
-          <th>ABOUT</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="">Contact Us</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">About Us</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Careers</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Flipcart Stories</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">press</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Corpotate Information</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </button>
+        </a>
     </div>
 
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>GROUP COMPANIES</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="">Myntra</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Cleartrip</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Shopy</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Footer -->
+    <div class="footer">
+
+        <div>
+            <table>
+                <thead>
+                    <th>ABOUT</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="">Contact Us</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">About Us</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Careers</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Flipcart Stories</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">press</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Corpotate Information</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>GROUP COMPANIES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="">Myntra</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Cleartrip</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Shopy</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>HELP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="">Payments</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Shipping</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Cancellation & Return</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">FAQ</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>HELP</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="">Payments</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Shipping</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">Cancellation & Return</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="">FAQ</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
 </body>
 
 </html>

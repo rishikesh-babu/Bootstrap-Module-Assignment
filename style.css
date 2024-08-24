@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.heading{
+
+.heading {
     margin-left: 10px;
+    /* position: sticky; */
+    top: 0%;
 }
-.heading img{
-    width: 100%;
-}
+
 .heading-title {
     font-style: oblique;
     font-weight: 700;
@@ -15,74 +16,126 @@
     color: #ff29a7;
     text-shadow: 9px -9px 3px pink;
 }
+
+.heading img {
+    width: 100%;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(199, 216, 184); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 216, 184);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #9eff17; 
-  }
-.head-bar{
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9eff17;
+}
+
+.head-bar {
     overflow: auto;
 }
-.sub-heading{
+
+.ads{
+    display: flex;
+    margin: 3em;
+    background-color: #e6e6e6;
+}
+.ads-text {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.ads img {
+    width: 24em;
+    object-fit: contain;
+}
+
+.ads-seperation {
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 500;
+    text-shadow: 3px 4px 6px black;
+}
+
+.ads-2 {
+    object-fit: cover;
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ads-2 img{
+    width: 60em;
+}
+.sub-heading {
     margin-block: 50px;
     margin-inline: 20px;
-    font-size: x-large;
+    font-size: 30px;
     font-weight: 500;
 }
-.sub-heading i{
+
+.sub-heading i {
     background-color: #48b858;
     height: 50px;
 }
-.product{
+
+.product {
     gap: 40px;
-    margin-bottom: 20px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
 }
+
 .product .child {
     padding: 10px;
     width: 16em;
     border: 1px solid rgb(186, 186, 186);
     border-radius: 8px;
     transition: box-shadow .4s linear;
+    cursor: pointer;
 }
-.product .child:hover{
+
+.product .child:hover {
     box-shadow: 0px 10px 39px 0px black;
 }
-.product .child img{
+
+.product .child img {
     width: 15em;
     height: 17em;
     object-fit: contain;
 
 }
-.product-text{
+
+.product-text {
     color: rgb(190, 197, 196);
     text-align: center;
 }
-.product .prize{
+
+.product .prize {
     font-weight: 800;
     font-size: x-large;
 }
-.product .delivery span{
+
+.product .delivery span {
     background-color: rgb(242, 250, 226);
     border-radius: 10px;
     padding: 2px;
 }
-.product .rate span{
+
+.product .rate span {
     font-size: x-large;
     background-color: #48b858;
     color: white;
@@ -91,8 +144,9 @@
 }
 
 .go-up-button button{
-    position: absolute;
-    right: 6px;
+    position: fixed;
+    bottom: 207px;
+    right: 0;
 }
 .footer {
     margin-top: 20px;
